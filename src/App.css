@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  border: solid 2px black;
+  border: solid 1px black;
   align-items: center;
 }
 
@@ -22,7 +21,7 @@ nav {
   background-color: black;
   color: white;
   text-decoration: none;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #help {
@@ -30,7 +29,7 @@ nav {
   color: black;
 }
 
-.home-container {
+.homeContainer {
   /* background-image: url(./Assets/sk-CK6tjAIMJWM-unsplash.jpg); */
   background-size: 1600px 800px;
   height: 50vh;
@@ -38,6 +37,11 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.homeContainer h2{
+  font-size: 3rem; 
 }
 
 #pizza {
@@ -45,7 +49,7 @@ nav {
   background-color: white;
   font-size: 1rem;
   letter-spacing: 1px;
-  border: solid black 2px;
+  border: solid black 1px;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -65,7 +69,7 @@ nav {
 .pizzaPic {
   background-image: url(./Assets/Pizza.jpg);
   height: 35vh;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 
 form {
