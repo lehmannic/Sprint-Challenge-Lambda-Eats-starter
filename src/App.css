@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  max-width: 100%;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border: solid 2px black;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navButtons a {
+  padding: 0.6rem 2rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#help {
+  background-color: white;
+  color: black;
+}
+
+.home-container {
+  /* background-image: url(./Assets/sk-CK6tjAIMJWM-unsplash.jpg); */
+  background-size: 1600px 800px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pizza {
+  padding: 0.8rem 2.5rem;
+  background-color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: solid black 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.pizzaForm {
+  width: 800px;
+  margin: 1% auto;
+  border: black solid 2px;
+}
+
+.pizzaForm h2 {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.pizzaPic {
+  background-image: url(./Assets/Pizza.jpg);
+  height: 35vh;
+  border-top: 2px solid black;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.toppings {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 100%;
+  padding: 1%;
+  background-color: red;
+  border: 1px solid black;
+  margin: 1% 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+}
+
+.order {
+  padding: 1%;
+  font-size: 1rem;
 }
