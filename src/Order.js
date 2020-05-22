@@ -7,8 +7,8 @@ export default function Pizza(props) {
     const { name, size, toppings, instructions } = props.pizza;
 
     let toppingList = Object.keys(toppings);
-    let checkedToppings = toppingList.filter((toppings) => {
-        return toppings[toppings];
+    let chosenToppings = toppingList.filter(function (picked) {
+        return toppings[picked];
     });
 
     return (
@@ -17,7 +17,7 @@ export default function Pizza(props) {
             <h3>Name: {name}</h3>
             <h3>Size: {size}</h3>
             <ul>
-                Toppings:{checkedToppings.map((topping, index) => {
+                Toppings:{chosenToppings.map((topping, index) => {
                     return <li key={index}>{topping}</li>;
             })}
             </ul>
